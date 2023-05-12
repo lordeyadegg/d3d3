@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+    background-color: #2B1E1D;
+    font-size: 1.3em;
+}
+body {
+    margin:0;
+    height:100%;
+}
+.main {
+    display: flex;
+    flex: auto;
+    font-family: 'TF2 Secondary';
+    color: #FAFFB8;
+}
+@font-face {
+    font-family: "Lucky Lady";
+    src: url(/fonts/Lucky%20Lady.otf) format("opentype");
+}
+@font-face {
+    font-family: "TF2 Build";
+    src: url(/fonts/tf2build.ttf) format("truetype");
+}
+@font-face {
+    font-family: "TF2 Secondary";
+    src: url(/fonts/TF2secondary.ttf) format("truetype");
+}
+.logo {
+    font-size:0;
+    display:inline-block;
+    
+}
+.logo img {
+    width: 100px;
+}
+.navigation {
+    margin:25px;
+    height: 100px;
+    display:flex;
+    flex:auto;
+}
+.nav_links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content:center;
+    flex:auto;
+}
+.nav_links a {
+    display: block;
+    font-family: 'Lucky Lady',sans-serif;
+    color: #FAFFB8;
+    font-size: 4em;
+    text-decoration: none;
+    align-self: center;
+    height: max-content;
+}
+.nav_links a:hover {
+    color: #EB966E;
+}
+hr {
+    border-style: solid;
+    border-color: #FAFFB8;
+    margin:0;
+    border-width:5px;
+}
+.title {
+    position: relative;
+    height: 500px;
+}
+.title a {
+    position:absolute;
+    display:block;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:0;
+    height: 60%;
+}
+.title a img {
+    height: 100%;
+}
+.title .background {
+    background-image: url(/images/poster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    flex:auto;
+    height:100%;
+}
+.content {
+    margin:50px;
+}
+.post_header {
+    font-family: 'TF2 Build';
+    font-size: 125%;
+}
+.post {
+    margin:50px;
+}
+.post_date {
+    font-size: 75%;
+}
+.watermark a:hover {
+    transform: scale(1.5);
+}
+img {
+    -webkit-user-drag: none;
+}
+a {
+    user-select: none;
+    -webkit-user-drag: none;
+}
